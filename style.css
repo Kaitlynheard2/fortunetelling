@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+body,html{
+  background-color: #80291c;
+  font-family: 'IM Fell French Canon SC', serif;
+}
+h1{
+  color:#c79e36;
+  font-size:6vmin;
+  font-style:italic;
+  text-align:center;
+}
+label{
+  color:#c79e36;
+  font-size:3vmin;
+  text-align:center;
+}
+
+.center{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
+}
+
+.center2{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:40%;
+  height:30px;
+}
+
+.center3{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:30%;
+  height:30px;
+}
+}
+#halfbutton{
+
+}
+
+#fortuneinput{
+
+}
+#fortunebutton{
+
+}
+#fortuneoutput{
+
+}
