@@ -3,20 +3,35 @@ var executeButton = document.getElementById("half-button");
 var outputParagraph = document.getElementById("fortune-output");
 var inputElement = document.getElementById('half-input');
 var inputElement2 = document.getElementById('fortune-input');
+var fortuneButton = document.getElementById('fortune-button')
 var space = " ";
 
+executeButton.addEventListener("click", halfNumber);
 function halfNumber(){
-alert(inputElement/2);
-console.log("half of" + space + inputElement + space + "is" + space + inputElement/2);
+  inputValue = inputElement.value;
+  alert(inputValue/2);
+  console.log("half of" + space + inputValue + space + "is" + space + inputValue/2);
 }
 
-
-// halfnumber(document.getElementById("half-input").value);
-
+fortuneButton.addEventListener("click", fortune);
 function fortune () {
-var randomIndex = floor(Math.random() * fortuneWords.length);
-document.innerhtml
+  var randomIndex = Math.floor(Math.random() * fortuneWords.length);
+  if(inputElement2.value){
+  outputParagraph.innerHTML = inputElement2.value + ": " + fortuneWords[randomIndex];
+  } else {
+  console.log("no name, no game");
+  }
+  restyle();
 }
 function restyle(){
+  var myElement = document.getElementById("fortune-output");
+  var randomColor = ["yellow", "orange", "blue","#533d5e", "green", "bue",]
+  var randomSize = ["2vmin", "3vmin", "4vmin", "5vmin", "6vmin", "7vmin"]
+  var randomIndex1 = Math.floor(Math.random() * randomColor.length);
+  var randomIndex2 = Math.floor(Math.random() * randomSize.length);
+  myElement.style.color = randomColor[randomIndex1];
+  myElement.style.fontSize = randomSize[randomIndex2];
+
+
 
 }

@@ -37,17 +37,9 @@ label{
   width:30%;
   height:30px;
 }
-}
-#halfbutton{
 
-}
-
-#fortuneinput{
-
-}
-#fortunebutton{
-
-}
-#fortuneoutput{
-
+#fortune-output{
+  text-align:center;
+  color: #c79e36;
+  font-size: 5vmin;
 }
