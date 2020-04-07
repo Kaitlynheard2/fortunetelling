@@ -15,7 +15,7 @@ console.log("half of" + space + inputElement + space + "is" + space + inputEleme
 
 function fortune () {
 var randomIndex = floor(Math.random() * fortuneWords.length);
-document.randomIndex.innerhtml
+document.innerhtml
 }
 function restyle(){
 
